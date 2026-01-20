@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCAPE SENSORIA | Expérience Immersive Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV (JEWEL STYLE) -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#concept">L'EXPÉRIENCE</a>
+            <a href="#salles">NOS MONDES</a>
+        </div>
+        <!-- Center Brand Text if needed, or simply links. Since Logo is in Hero, we keep Nav minimal -->
+        <div class="nav-links">
+            <a href="#infos">INFOS</a>
+            <a href="booking.html" style="color: var(--primary);">RÉSERVER</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (LOGO RIGHT) -->
+    <header class="hero-wrapper">
+        <!-- Left: Text -->
+        <div class="hero-text-col reveal">
+            <div
+                style="color: var(--primary); font-family: var(--font-display); letter-spacing: 3px; margin-bottom: 20px;">
+                IMMERSION TOTALE</div>
+            <h1 class="display-title">
+                NE JOUEZ PAS.<br>
+                VIVEZ L'INSTANT.
+            </h1>
+            <p class="lead">
+                Une expérience sensorielle unique où le cinéma rencontre le jeu. Oubliez la réalité.
+            </p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <a href="#salles" class="btn btn-primary">DÉCOUVRIR LES SALLES</a>
+                <a href="booking.html" class="btn btn-secondary">RÉSERVER</a>
+            </div>
+        </div>
+
+        <!-- Right: Image + Floating Logo -->
+        <div class="hero-img-col reveal">
+            <img src="hero-bg.jpg" alt="Background" class="hero-bg-img">
+            <img src="logo.png" alt="ESCAPE SENSORIA" class="hero-logo-overlay">
+        </div>
+    </header>
+
+    <!-- SAFETY SECTION MOVED FROM HERE -->
+
+    <!-- ROOMS SECTION -->
+    <section id="salles" class="section">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 60px;">NOS MONDES</h2>
+            <div class="rooms-showcase">
+                <!-- Room 1 -->
+                <a href="room1.html" class="cinematic-card reveal">
+                    <img src="room_neon.png" class="card-bg" style="filter: brightness(0.8);">
+                    <div class="card-content">
+                        <span style="color: var(--secondary); letter-spacing: 2px;">CYBERPUNK</span>
+                        <h3>LE LABYRINTHE DE NÉON</h3>
+                    </div>
+                </a>
+                <!-- Room 2 -->
+                <a href="room2.html" class="cinematic-card reveal">
+                    <img src="room_ritual.png" class="card-bg" style="filter: brightness(0.7);">
+                    <div class="card-content">
+                        <span style="color: var(--secondary); letter-spacing: 2px;">HORREUR</span>
+                        <h3>LE RITUEL D'OBSIDIENNE</h3>
+                    </div>
+                </a>
+                <!-- Room 3 -->
+                <a href="room3.html" class="cinematic-card reveal">
+                    <img src="room_pharaoh.png" class="card-bg" style="filter: brightness(0.8);">
+                    <div class="card-content">
+                        <span style="color: var(--secondary); letter-spacing: 2px;">AVENTURE</span>
+                        <h3>L'ÉNIGME DU PHARAON</h3>
+                    </div>
+                </a>
+                <!-- Room 4 -->
+                <a href="room4.html" class="cinematic-card reveal">
+                    <img src="room_helios.png" class="card-bg" style="filter: brightness(0.8);">
+                    <div class="card-content">
+                        <span style="color: var(--secondary); letter-spacing: 2px;">SCI-FI</span>
+                        <h3>PROJET HELIOS</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAFETY GUIDELINES (MOVED & UPDATED) -->
+    <section id="safety" class="section">
+        <div class="container reveal">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 class="section-title">CONSEILS DE SÉCURITÉ</h2>
+                <p style="color: #888;">POUR UNE EXPÉRIENCE OPTIMALE</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="glass-card info-box">
+                    <div class="info-icon">🌫️</div>
+                    <h4>EFFETS DE FUMÉE</h4>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 15px;">
+                        Nos salles utilisent des fumigènes non toxiques pour créer une atmosphère immersive.<br>
+                        Déconseillé aux personnes souffrant d’asthme sévère.
+                    </p>
+                </div>
+                <div class="glass-card info-box">
+                    <div class="info-icon">⚡</div>
+                    <h4>LUMIÈRE STROBOSCOPIQUE</h4>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 15px;">
+                        Certaines salles contiennent des effets lumineux intenses.<br>
+                        Non recommandé aux personnes épileptiques ou sensibles.
+                    </p>
+                </div>
+                <div class="glass-card info-box">
+                    <div class="info-icon">🔊</div>
+                    <h4>EFFETS SONORES</h4>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 15px;">
+                        Sons immersifs et parfois soudains.<br>
+                        Des protections auditives peuvent être fournies sur demande.
+                    </p>
+                </div>
+                <div class="glass-card info-box">
+                    <div class="info-icon">🏃</div>
+                    <h4>ACTIVITÉ PHYSIQUE</h4>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 15px;">
+                        Certaines énigmes peuvent nécessiter de se baisser ou de se déplacer dans des espaces
+                        restreints.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS & FAQ (NEW) -->
+    <section id="reviews-faq" class="section" style="background: rgba(0,0,0,0.2);">
+        <div class="container reveal">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">VOTRE AVIS & QUESTIONS</h2>
+
+            <!-- Reviews Slider -->
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p style="font-style: italic; color: #ddd; margin-bottom: 20px;">"Une immersion totale, on a oublié
+                        qu'on était à Bruxelles. Le décor du Pharaon est dingue !"</p>
+                    <strong style="color: var(--primary);">Sophie</strong>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p style="font-style: italic; color: #ddd; margin-bottom: 20px;">"L'ambiance sonore dans la salle
+                        Horreur est terrifiante. Adrénaline pure du début à la fin."</p>
+                    <strong style="color: var(--primary);">Thomas</strong>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p style="font-style: italic; color: #ddd; margin-bottom: 20px;">"Scénario très bien ficelé, rien
+                        n'est laissé au hasard. L'équipe est top."</p>
+                    <strong style="color: var(--primary);">Julie</strong>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <p style="font-style: italic; color: #ddd; margin-bottom: 20px;">"Un vrai challenge ! On a réussi à
+                        sortir à 30 secondes de la fin."</p>
+                    <strong style="color: var(--primary);">Marc</strong>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">Combien de personnes peuvent participer à une session ?</button>
+                    <div class="faq-answer">
+                        Nos salles sont conçues pour des équipes de 2 à 6 joueurs afin de garantir une expérience
+                        optimale pour chacun.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Faut-il une expérience préalable en escape game ?</button>
+                    <div class="faq-answer">
+                        Non, aucune expérience n'est requise. Nos Game Masters adaptent les indices en fonction de votre
+                        progression.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Peut-on venir avec des enfants ?</button>
+                    <div class="faq-answer">
+                        L'âge minimum conseillé est de 12 ans (accompagné d'un adulte). Certaines salles (Horreur) sont
+                        réservées aux plus de 16 ans.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Les salles sont-elles effrayantes ?</button>
+                    <div class="faq-answer">
+                        Cela dépend du thème choisi ! "Le Rituel d'Obsidienne" est une salle horreur. Les autres salles
+                        misent sur l'aventure et l'immersion sans être effrayantes.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Que se passe-t-il si nous n’arrivons pas à finir la mission ?</button>
+                    <div class="faq-answer">
+                        Le Game Master viendra vous chercher à la fin du temps imparti et vous expliquera la fin de
+                        l'histoire et les énigmes restantes.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Peut-on réserver pour un événement privé ou d’entreprise ?</button>
+                    <div class="faq-answer">
+                        Absolument ! Contactez-nous via le formulaire ou par téléphone pour organiser des team buildings
+                        ou anniversaires sur mesure.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPENING HOURS & INFO (NEW) -->
+    <section id="infos" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">INFOS PRATIQUES</h2>
+
+            <div class="hours-grid">
+                <!-- Hours -->
+                <div class="glass-card hours-card">
+                    <h3 style="color: var(--secondary); margin-bottom: 30px;">HORAIRES D'OUVERTURE</h3>
+                    <div class="time-row">
+                        <span>Lundi</span>
+                        <span style="color: #666;">FERMÉ</span>
+                    </div>
+                    <div class="time-row">
+                        <span>Mardi - Vendredi</span>
+                        <span>14:00 - 22:00</span>
+                    </div>
+                    <div class="time-row">
+                        <span>Samedi - Dimanche</span>
+                        <span>10:00 - 23:00</span>
+                    </div>
+                    <div style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+                        *Dernière session 90min avant fermeture.
+                    </div>
+                </div>
+
+                <!-- Duration -->
+                <div class="glass-card hours-card">
+                    <h3 style="color: var(--secondary); margin-bottom: 30px;">DURÉE DE L'EXPÉRIENCE</h3>
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;">
+                        <div style="text-align: center;">
+                            <strong style="display: block; font-size: 1.5rem; color: #fff;">10</strong>
+                            <span style="font-size: 0.8rem; color: #888;">BRIEF</span>
+                        </div>
+                        <div style="height: 1px; background: #333; flex: 1; margin: 0 15px;"></div>
+                        <div style="text-align: center;">
+                            <strong style="display: block; font-size: 2rem; color: var(--primary);">60</strong>
+                            <span style="font-size: 0.8rem; color: var(--primary);">JEU</span>
+                        </div>
+                        <div style="height: 1px; background: #333; flex: 1; margin: 0 15px;"></div>
+                        <div style="text-align: center;">
+                            <strong style="display: block; font-size: 1.5rem; color: #fff;">10</strong>
+                            <span style="font-size: 0.8rem; color: #888;">DEBRIEF</span>
+                        </div>
+                    </div>
+                    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                        <span style="display: block; font-size: 0.9rem; color: #888; margin-bottom: 5px;">TEMPS TOTAL
+                            SUR PLACE</span>
+                        <strong style="font-size: 1.5rem;">90 MINUTES</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION MAP -->
+    <section class="map-section reveal">
+        <div class="map-container">
+            <div class="map-overlay"></div>
+            <!-- Google Maps Embed for Rue de l'Aventure 42, 1000 Brussels (Using generic Brussels center as placeholder for demo if exact address not geocodable, but label is set) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.2546879815!2d4.3517!3d50.8503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38703a9ad71%3A0xe213f5d5e0e0e0e0!2sBruxelles%2C%20Belgique!5e0!3m2!1sfr!2sbe!4v1700000000000!5m2!1sfr!2sbe"
+                width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(1.2);"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Col 1: Brand -->
+                <div class="footer-col">
+                    <h4 style="color: #fff; font-size: 1.5rem;">ESCAPE SENSORIA</h4>
+                    <p style="color: #888; margin-bottom: 20px;">
+                        L'expérience immersive ultime en Belgique.
+                        Créateurs de mondes réels.
+                    </p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="color: #fff; font-size: 1.2rem; opacity: 0.5;">FB</a>
+                        <a href="#" style="color: #fff; font-size: 1.2rem; opacity: 0.5;">IG</a>
+                        <a href="#" style="color: #fff; font-size: 1.2rem; opacity: 0.5;">TK</a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Contact -->
+                <div class="footer-col">
+                    <h4>NOUS CONTACTER</h4>
+
+                    <a href="mailto:info@sensoria-du6escape.be" class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div class="contact-text">info@sensoria-du6escape.be<br><small style="color:#666">Réponse sous
+                                24h</small></div>
+                    </a>
+
+                    <a href="tel:+3212345578" class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">+32 123 45 578<br><small style="color:#666">10h - 22h</small></div>
+                    </a>
+                </div>
+
+                <!-- Col 3: Location -->
+                <div class="footer-col">
+                    <h4>NOUS TROUVER</h4>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            Rue de l’Aventure 42<br>
+                            1000 Brussels<br>
+                            BELGIUM
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="legal-row">
+                <div>&copy; 2026 ESCAPE SENSORIA. Tous droits réservés.</div>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Mentions Légales</a>
+                    <a href="#">CGV</a>
+                    <a href="#">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
