@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE RITUEL D'OBSIDIENNE | ESCAPE SENSORIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="ESCAPE SENSORIA" style="height: 40px;">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">RETOUR ACCUEIL</a>
+            <a href="booking.html" class="active">RÉSERVER</a>
+        </div>
+        <a href="booking.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.8rem;">BILLETTERIE</a>
+    </nav>
+
+    <header class="hero-wrapper" style="min-height: 80vh;">
+        <div class="shape-glow" style="background: #ff3300;"></div>
+        <div class="hero-text-col reveal">
+            <div class="hero-badge" style="border-color: #ff3300; color: #ff5533;">HORREUR MYSTIQUE</div>
+            <h1 class="display-title">LE RITUEL<br>D'OBSIDIENNE</h1>
+            <p class="lead">Le Temple Noir vous attend. Ici, les ombres sont vivantes et la lumière est votre seule arme
+                de survie.</p>
+            <div class="hero-actions">
+                <a href="booking.html?room=room2" class="btn btn-primary">RÉSERVER CETTE SALLE</a>
+            </div>
+        </div>
+        <div class="hero-img-col reveal">
+            <img src="room_ritual.png" class="hero-bg-img" style="filter: brightness(0.5);">
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="glass-card reveal" style="padding: 60px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                    <div>
+                        <h2 class="section-title" style="text-align: left;">LE SCÉNARIO</h2>
+                        <p style="color: #ccc;">
+                            Un archéologue fou a réveillé une entité ancienne. Vous avez 60 minutes pour inverser le
+                            rituel avant que l'éclipse ne soit totale.
+                        </p>
+                        <p style="color: #ccc;">
+                            Cette salle joue avec vos peurs primaires. Obscurité, sons binauraux, souffles d'air...
+                            Vous devrez collaborer pour maintenir la lumière allumée.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                            <div
+                                style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: var(--radius-md); text-align: center;">
+                                <strong style="display: block; font-size: 1.5rem; color: var(--primary);">60</strong>
+                                <span style="font-size: 0.8rem; color: #888;">MINUTES</span>
+                            </div>
+                            <div
+                                style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: var(--radius-md); text-align: center;">
+                                <strong style="display: block; font-size: 1.5rem; color: var(--primary);">3-6</strong>
+                                <span style="font-size: 0.8rem; color: #888;">JOUEURS</span>
+                            </div>
+                        </div>
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: var(--radius-md); text-align: center;">
+                            <strong
+                                style="display: block; font-size: 1.2rem; color: #fff; margin-bottom: 5px;">DIFFICULTÉ</strong>
+                            <span style="color: var(--secondary); font-size: 1.2rem;">★★★☆☆</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 80px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding: 60px 0;">
+        <div class="container">
+            <p style="opacity: 0.5;">&copy; 2026 ESCAPE SENSORIA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

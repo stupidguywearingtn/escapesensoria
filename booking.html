@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RÉSERVATION | ESCAPE SENSORIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="ESCAPE SENSORIA" style="height: 40px;">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">RETOUR ACCUEIL</a>
+        </div>
+    </nav>
+
+    <div class="container section" style="padding-top: 150px;">
+        <h1 class="section-title">VOTRE SESSION</h1>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+
+            <!-- LEFT COLUMN: STEPS -->
+            <div>
+                <!-- 1. MISSION -->
+                <div class="glass-card reveal" style="padding: 40px; margin-bottom: 40px;">
+                    <h3
+                        style="margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px;">
+                        01. CHOIX DE LA MISSION</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="room-select-card" data-room="room1" onclick="selectRoom('room1')"
+                            style="cursor: pointer; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-md); transition: 0.3s; background: rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                            <img src="room_neon.png"
+                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                            <div>
+                                <h4 style="font-size: 1rem; color: #fff;">LABYRINTHE DE NÉON</h4>
+                                <span style="font-size: 0.8rem; color: #777;">Cyberpunk</span>
+                            </div>
+                        </div>
+                        <div class="room-select-card" data-room="room2" onclick="selectRoom('room2')"
+                            style="cursor: pointer; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-md); transition: 0.3s; background: rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                            <img src="room_ritual.png"
+                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                            <div>
+                                <h4 style="font-size: 1rem; color: #fff;">RITUEL D'OBSIDIENNE</h4>
+                                <span style="font-size: 0.8rem; color: #777;">Horreur</span>
+                            </div>
+                        </div>
+                        <div class="room-select-card" data-room="room3" onclick="selectRoom('room3')"
+                            style="cursor: pointer; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-md); transition: 0.3s; background: rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                            <img src="room_pharaoh.png"
+                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                            <div>
+                                <h4 style="font-size: 1rem; color: #fff;">ÉNIGME DU PHARAON</h4>
+                                <span style="font-size: 0.8rem; color: #777;">Aventure</span>
+                            </div>
+                        </div>
+                        <div class="room-select-card" data-room="room4" onclick="selectRoom('room4')"
+                            style="cursor: pointer; padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-md); transition: 0.3s; background: rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                            <img src="room_helios.png"
+                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                            <div>
+                                <h4 style="font-size: 1rem; color: #fff;">PROJET HELIOS</h4>
+                                <span style="font-size: 0.8rem; color: #777;">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. DATE -->
+                <div class="glass-card reveal" style="padding: 40px; margin-bottom: 40px;">
+                    <h3
+                        style="margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px;">
+                        02. DATE & HEURE</h3>
+                    <input type="date" id="booking-date" class="input-field"
+                        style="color-scheme: dark; margin-bottom: 30px;">
+
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                        <div class="time-slot" onclick="selectTime(this, '10:00')"
+                            style="padding: 15px; text-align: center; border: 1px solid #333; border-radius: 8px; cursor: pointer;">
+                            10:00</div>
+                        <div class="time-slot" onclick="selectTime(this, '12:00')"
+                            style="padding: 15px; text-align: center; border: 1px solid #333; border-radius: 8px; cursor: pointer;">
+                            12:00</div>
+                        <div class="time-slot" onclick="selectTime(this, '14:00')"
+                            style="padding: 15px; text-align: center; border: 1px solid #333; border-radius: 8px; cursor: pointer;">
+                            14:00</div>
+                        <div class="time-slot" onclick="selectTime(this, '16:00')"
+                            style="padding: 15px; text-align: center; border: 1px solid #333; border-radius: 8px; cursor: pointer;">
+                            16:00</div>
+                        <div class="time-slot" onclick="selectTime(this, '18:00')"
+                            style="padding: 15px; text-align: center; border: 1px solid #333; border-radius: 8px; cursor: pointer;">
+                            18:00</div>
+                        <div class="time-slot" onclick="selectTime(this, '20:00')"
+                            style="padding: 15px; text-align: center; border: 1px solid #333; border-radius: 8px; cursor: pointer;">
+                            20:00</div>
+                        <div class="time-slot" onclick="selectTime(this, '22:00')"
+                            style="padding: 15px; text-align: center; border: 1px solid #333; border-radius: 8px; cursor: pointer;">
+                            22:00</div>
+                    </div>
+                </div>
+
+                <!-- 3. DETAILS -->
+                <div class="glass-card reveal" style="padding: 40px;">
+                    <h3
+                        style="margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px;">
+                        03. JOUEURS</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <select id="players-count" class="input-field" style="grid-column: span 2;"
+                            onchange="updatePrice()">
+                            <option value="3">3 Joueurs</option>
+                            <option value="4">4 Joueurs</option>
+                            <option value="5">5 Joueurs</option>
+                            <option value="6">6 Joueurs</option>
+                        </select>
+                        <input type="text" placeholder="Prénom" class="input-field">
+                        <input type="text" placeholder="Nom" class="input-field">
+                        <input type="email" placeholder="Email" class="input-field" style="grid-column: span 2;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: STICKY SUMMARY -->
+            <div>
+                <div class="glass-card"
+                    style="padding: 40px; position: sticky; top: 100px; border: 1px solid var(--primary-glow);">
+                    <h3 style="color: var(--primary); margin-bottom: 30px; text-align: center;">RÉCAPITULIF</h3>
+
+                    <div style="margin-bottom: 20px;">
+                        <span style="display: block; font-size: 0.8rem; color: #888;">MISSION</span>
+                        <strong id="summary-room" style="font-size: 1.1rem;">...</strong>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <span style="display: block; font-size: 0.8rem; color: #888;">DATE & HEURE</span>
+                        <strong id="summary-date">--/--/----</strong> à <strong id="summary-time">--:--</strong>
+                    </div>
+
+                    <div style="margin-bottom: 40px;">
+                        <span style="display: block; font-size: 0.8rem; color: #888;">JOUEURS</span>
+                        <strong id="summary-players">3</strong>
+                    </div>
+
+                    <div
+                        style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center;">
+                        <span>TOTAL</span>
+                        <span id="summary-total"
+                            style="font-size: 2rem; font-weight: 700; color: var(--primary);">90€</span>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%;"
+                        onclick="alert('Réservation confirmée !')">CONFIRMER</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="margin-top: 100px; text-align: center;">
+        <div class="container">
+            <p>&copy; 2026 ESCAPE SENSORIA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .room-select-card.selected {
+            background: var(--primary-glow) !important;
+            border-color: var(--primary) !important;
+        }
+
+        .time-slot.selected {
+            background: var(--primary);
+            color: #000;
+            border-color: var(--primary) !important;
+        }
+    </style>
+</body>
+
+</html>
